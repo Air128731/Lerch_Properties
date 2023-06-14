@@ -1,0 +1,369 @@
+.App {
+    font-family: "Open Sans",sans-serif;
+    width: 100%;
+    height: 100%;
+    background-color: #0F0C1D;
+}
+
+input[type=text] {
+    background-color: transparent;
+    border: 1px solid #4A5568;
+}
+
+.defaultBackground {
+    background-color: #0F0C1D;
+}
+
+.header {
+    width: 100%;
+    height: 100%;
+    background-color: #0F0C1D;
+}
+
+.body > div {
+    width: 1040px;
+}
+
+.footer > div{
+    width: 1240px;
+}
+
+.detail-body > div {
+    width: 1040px;
+}
+
+.tableSortList > a.active{
+    background-color: #1B1630;
+}
+
+.searchInput input[type=text] {
+    width: 400px;
+    box-sizing: border-box;
+    border: 1px solid #444;
+    background-color: #1B1630;
+    border-radius: 6px;
+    font-size: 16px;
+    color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 8px 20px 8px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.footer_email input[type=text] {
+    width: 60%;
+    box-sizing: border-box;
+    border: 1px solid #444;
+    background-color: #1B1630;
+    border-radius: 6px;
+    font-size: 16px;
+    color: white;
+    padding: 8px 10px 8px 15px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.tableHeader {
+    background-color: #1B1630;
+}
+
+.paginationItems a {
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.lorswap_vote {
+    background-color: #662483;
+    width: 100%;
+}
+
+.tableHrefs a {
+    background-color: #1A1530;
+    color: white;
+}
+
+.tableHrefs a.active {
+    background-color: white;
+    color: #0F0C1D;
+    font-weight: bold;   
+}
+
+.blockchain-com a{
+    background-color: #1B1630;
+}
+
+.paginationItems a.active {
+    background-color: #662483;
+    color: white;
+}
+
+.timelinePeriod a.active {
+    background-color: #662483;
+    color: white;
+}
+
+.paginationItems a:hover:not(.active) {
+    background-color: #662483;
+}
+
+.mainActionTag a {
+    background-color: #1A1530;
+    color: #B7B6CE;
+}
+
+.mainActionTag a.active {
+    background-color: white;
+    color: #0F0C1D;
+    font-weight: bold;
+    /* color: white;
+    text-decoration: underline;
+    text-decoration-color: white; */
+}
+
+/* lg */
+@media only screen and (max-width: 1040px) {
+    .body div {
+        width: 100%;
+    }
+
+    .footer > div{
+        width: 100%;
+    }
+
+    .searchInput{
+        width: 100%;
+    }
+
+    .detail-body > div {
+        width: 100%;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+}
+
+/* md */
+@media only screen and (max-width: 768px) {
+
+    .searchInput input[type=text] {
+        width: 300px;
+    }
+
+    .footer_email input[type=text] {
+        width: 200px !important;
+    }
+    
+    .lorWatch {
+        text-align: center;
+    }
+
+    .tableSortList {
+        flex-direction: column;
+    }
+
+    .tableHrefs {
+        justify-content: center;
+    }
+
+    .searchInput{
+        padding-top: 20px;
+    }
+
+    .footerLink{
+        width: 50% !important;
+    }
+
+    .footerLogo { 
+        width: 100% !important;
+    }
+
+    .trade_btn{
+        width: 50%;
+    }
+
+    .wallet_btn{
+        width: 50%;
+    }
+
+    /* .detailedInfo {
+        grid-template-columns: repeat(2, 1fr);
+    } */
+
+    .profit_calc{
+        width: 100% !important;
+    }
+
+    .lorswap_tab{
+        width: 100% !important;
+    }
+
+    .Dnaria-logo img{
+        width: 35px;
+        height: 25px;
+        margin-top: 8px;
+    }
+
+    .Dnaria-logo p{
+        font-size: 25px;
+    }
+
+    .Dnaria-logo div>p{
+        font-size: 15px;
+    }
+}
+
+/* sm */
+@media only screen and (max-width: 640px) {
+    .smHidden {
+        display: none;
+    }
+
+    .smShow {
+        text-align: center;
+    }
+
+    .trade_btn{
+        width: 50%;
+    }
+
+    .wallet_btn{
+        width: 50%;
+    }
+
+    .profit_calc{
+        width: 100% !important;
+    }
+}
+
+.vote_btn {
+    background-color: #CCC1F0;
+    color: #662483;
+    border-radius: 8px;
+}
+
+.trade_btn {
+    color: white;
+    background-color: #662483;
+    border-radius: 8px;
+}
+
+.wallet_btn{
+    color: #662483;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Toggle button */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 10px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
