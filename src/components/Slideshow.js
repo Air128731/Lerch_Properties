@@ -1,12 +1,21 @@
 import { useState, useEffect } from "react";
 import '../css/slide-show.css'
+import '../css/project-base.css';
 import { transform } from "typescript";
 
 function ImageSlider() {
   const [slideIndex, setSlideIndex] = useState(1);
 
   function plusSlides(n) {
-    setSlideIndex(slideIndex + n);
+    const mySlides = document.getElementsByClassName("mySlides");
+
+    if(slideIndex + n == 0)
+      setSlideIndex(mySlides.length);
+    else if(slideIndex + n == mySlides.length + 1)
+      setSlideIndex(1);
+    else
+      setSlideIndex(slideIndex + n);
+
   }
 
   function currentSlide(n) {
@@ -35,22 +44,14 @@ function ImageSlider() {
   return (
     <>
         <div className="slideshow-container">
-            <div className="mySlides fade">
-                <img src="https://www.lpc.com/wp-content/uploads/2018/04/Exterior2.jpeg" style={{ width: "100%", height: "auto"}} />
-            </div>
-
-            <div className="mySlides fade">
-                <img src="https://www.lpc.com/wp-content/uploads/2018/03/IMG_4567-EDIT_small.jpg" style={{ width: "100%", height: "auto"}} />
-            </div>
-
-            <div className="mySlides fade">
-                <img src="https://www.lpc.com/wp-content/uploads/2018/03/HIPLA_io_PlayaVista_09_160427.jpg" style={{ width: "100%", height: "auto"}} />
-            </div>
+            <div className="mySlides fade" style={{backgroundImage: "url('https://www.lpc.com/wp-content/uploads/2018/04/Exterior2.jpeg')"}}></div>
+            <div className="mySlides fade" style={{backgroundImage: "url('https://www.lpc.com/wp-content/uploads/2018/03/IMG_4567-EDIT_small.jpg')"}}></div>
+            <div className="mySlides fade" style={{backgroundImage: "url('https://www.lpc.com/wp-content/uploads/2018/03/HIPLA_io_PlayaVista_09_160427.jpg')"}}></div>
 
             <a className="prev" onClick={() => plusSlides(-1)}>❮</a>
             <a className="next" onClick={() => plusSlides(1)}>❯</a>
         </div>
-        <div className='absolute bottom-3' style={{ textAlign: "center", left: "48%" }}>
+        <div className='fixed w-full bottom-3' style={{ textAlign: "center"}}>
             <span className="dot" onClick={() => currentSlide(1)}></span> 
             <span className="dot" onClick={() => currentSlide(2)}></span> 
             <span className="dot" onClick={() => currentSlide(3)}></span> 

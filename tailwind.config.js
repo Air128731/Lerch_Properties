@@ -7,22 +7,22 @@ module.exports = {
     extend: {},
     screens: {
       "_sm": {
-        max: "640px",
+        max: "840px",
       },
       "_md": {
-        max: "768px",
+        max: "1020px",
       },
       "_lg": {
-        max: "1040px",
+        max: "1440px",
       },
       "sm": {
-        min: "640px",
+        min: "840px",
       },
       "md": {
-        min: "768px",
+        min: "1020px",
       },
       "lg": {
-        min: "1040px",
+        min: "1440px",
       },
     } 
   },
