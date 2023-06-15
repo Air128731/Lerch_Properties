@@ -46,7 +46,7 @@ function ImageSlider() {
         <div className="slideshow-container">
             <div className="mySlides fade" style={{backgroundImage: "url('https://www.lpc.com/wp-content/uploads/2018/04/Exterior2.jpeg')"}}></div>
             <div className="mySlides fade" style={{backgroundImage: "url('https://www.lpc.com/wp-content/uploads/2018/03/IMG_4567-EDIT_small.jpg')"}}></div>
-            <div className="mySlides fade" style={{backgroundImage: "url('https://www.lpc.com/wp-content/uploads/2018/03/HIPLA_io_PlayaVista_09_160427.jpg')"}}></div>
+            <div className="mySlides fade" style={{backgroundImage: "url('https://lerchproperties.net/wp-content/uploads/2023/06/Lerch-Properties-5.webp')"}}></div>
 
             <a className="prev" onClick={() => plusSlides(-1)}>❮</a>
             <a className="next" onClick={() => plusSlides(1)}>❯</a>

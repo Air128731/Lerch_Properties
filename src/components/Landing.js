@@ -7,6 +7,7 @@ import Aboutus from './Aboutus';
 
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { CheckIcon } from '@heroicons/react/24/outline';
 
 function Landing () {
     return (
@@ -14,8 +15,8 @@ function Landing () {
         <div className='relative w-full h-full body'>
           <div className='relative overflow-hidden' style={{width: "100vw", height: "100vh"}}>
             <Slideshow />
-            <div className='absolute w-1/2 text-5xl text-white fadeInLeft top-1/3 left-1/4 _sm:text-4xl _sm:w-full _sm:left-0 _sm:top-1/3'>
-              WE OFFER QUALITY APARTMENT, TOWNHOUSE & DUPLEX RENTALS WITH AFFORDABLE MONTHLY RATES<br></br>
+            <div className='absolute w-1/2 text-5xl text-white bg-black bg-opacity-50 fadeInLeft top-1/3 left-1/4 _sm:text-4xl _sm:w-full _sm:left-0 _sm:top-1/3'>
+              <div className='font-bold'>WE OFFER QUALITY APARTMENT, TOWNHOUSE & DUPLEX RENTALS WITH AFFORDABLE MONTHLY RATE</div><br></br>
               <span className='text-3xl mt-7 _sm:text-xl'>For More Information Call </span>
               <span className='text-3xl text-yellow-200 mt-7 _sm:text-xl'>(618) 288‐3108</span>
             </div>
@@ -30,6 +31,21 @@ function Landing () {
               <Aboutus flag="5" title="Maintenance Request" content="Fill out our form to submit a maintenance request by clicking on the maintenance request tab at the top of this page. We respond to all maintenance requests in a timely manner. If it’s an emergency, please call us at (618) 288-3108 and follow the prompts for emergency maintenance."/>
               <Aboutus flag="6" title="Pay Rent" content="We offer 2 different ways you can pay your rent. Set up ACH debit withdrawals from your checking or savings account. Stop by our rental office located in Maryville and place your payment in our drop box located to the left of our front office door. Payments can be placed in the drop box any time or day. Our office hours are Mon-Fri: 9AM-5PM."/>
             </div>
+          </div>
+
+          <div className='grid grid-cols-2'>
+            <div className='flex justify-center'>
+              <div className='flex flex-col items-start justify-start'>
+                <div className='flex flex-row items-center gap-2'>Why Choose Us?</div>
+                <div className='flex flex-row items-center gap-2'><CheckIcon className='w-8 h-8 text-green-800'/>Excellent Customer Service</div>
+                <div className='flex flex-row items-center gap-2'><CheckIcon className='w-8 h-8 text-green-800'/>Safe, Quality Properties</div>
+                <div className='flex flex-row items-center gap-2'><CheckIcon className='w-8 h-8 text-green-800'/>Quick Response</div>
+                <div className='flex flex-row items-center gap-2'><CheckIcon className='w-8 h-8 text-green-800'/>Our Great Reputation</div>
+                <div className='flex flex-row items-center gap-2'><CheckIcon className='w-8 h-8 text-green-800'/>Leader in the industry</div>
+                <div className='flex flex-row items-center gap-2'><CheckIcon className='w-8 h-8 text-green-800'/>Affordable Rent Pricing</div>
+              </div>
+            </div>
+            
           </div>
 
           <div className='fixed top-0 w-full fadeInDown'>
