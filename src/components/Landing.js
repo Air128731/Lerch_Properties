@@ -53,7 +53,7 @@ function Landing () {
             <div className='flex justify-center _md:py-10'>
               <div className='flex flex-col'>
                 <div className='text-xl bg-[#6366f1] rounded-lg p-2 text-white'>We are Committed to High Standard and Quality Values</div>
-                <div className='grid grid-cols-2 pt-10'>
+                <div className='grid grid-cols-2 pt-10 _md:grid-cols-1'>
                   <div className='flex items-center justify-center'><img src="https://lerchproperties.net/wp-content/uploads/2023/06/Lerch-Properties-4.webp"></img></div>
                   <div className='flex items-center justify-center text-md'>Welcome to your new home away from home! We currently own and manage over 50 different property locations throughout the local area. With Lerch Properties, you will find that we are committed to providing our tenants with a comfortable quality of life. Everyone on our team is dedicated to providing each of our tenants with prompt and friendly service no matter when you need it.</div>
                 </div>
@@ -71,6 +71,29 @@ function Landing () {
                   <div className='flex flex-row items-center gap-2 pt-2'><ClockIcon className='w-8 h-8 text-green-800'/>Saturday-----Closed</div>
                   <div className='flex flex-row items-center gap-2 pt-2'><ClockIcon className='w-8 h-8 text-green-800'/>Sunday-----Closed</div>
                 </div>
+            </div>
+          </div>
+
+          {/* Testimonial */}
+          <div className='flex flex-col py-10 bg-gray-50 fadeInLeft'>
+            <div className='pb-10 text-4xl font-bold text-gray-700'>Testimonials</div>
+            <div className='flex flex-row justify-center gap-60 _md:flex-col _md:gap-0'>
+              <div className="card">
+                <div className="cardheader">
+                  <p>Have been renting (lived in 4 states) for almost 20 years now. Renting from Lerch Properties for about a year and maintenance crew is the best I have come across. They are expeditious, friendly and helpful. The ladies in the office are always friendly and helpful, too. Would recommend this company to anyone looking to rent a home.</p>
+                </div>
+                <div className="text-xl font-bold text-gray-500 cardcontainer">
+                  <p>Catherine S.</p>
+                </div>
+              </div>
+              <div className="card">
+                <div className="cardheader" style={{paddingBottom: "40px", paddingTop: "30px"}}>
+                  <p>I have lived in one of their properties for almost two years now. My townhouse is in a quiet neighborhood, the rent is affordable, and they are pet friendly. Staff and maintenance have always been helpful and timely.</p>
+                </div>
+                <div className="text-xl font-bold text-gray-500 cardcontainer">
+                  <p>Emma D.</p>
+                </div>
+              </div>
             </div>
           </div>
 

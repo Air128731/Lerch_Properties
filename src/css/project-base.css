@@ -16,9 +16,36 @@
         width: 80% !important;
         margin: auto;
     }
+
+    .card{
+        width: 100% !important;
+    }
 }
 
 /* _sm */
 @media only screen and (max-width: 840px) {
 
+}
+
+.card {
+    margin: 15px 0;
+    width: 550px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+.cardheader {
+    background-color: #04AA6D;
+    color: white;
+    padding: 10px;
+}
+
+.cardcontainer {
+    padding: 10px;
+}
+
+.cardheader p{
+    font-size:16px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:bold;
 }
