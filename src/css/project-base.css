@@ -8,7 +8,14 @@
 
 /* _md */
 @media only screen and (max-width: 1020px) {
+    .Aboutus {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
 
+    .AboutusItem {
+        width: 80% !important;
+        margin: auto;
+    }
 }
 
 /* _sm */

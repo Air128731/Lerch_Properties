@@ -1,5 +1,5 @@
 .fadeIn {
-    animation: fadeIn 2s;
+    animation: fadeIn 1.5s;
     animation-iteration-count: 1;
 }
 
@@ -13,7 +13,7 @@
 }
 
 .fadeInLeft {
-    animation: fadeInLeft 2s;
+    animation: fadeInLeft 1.5s;
     animation-iteration-count: 1;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .fadeInDown {
-    animation: fadeInDown 2s;
+    animation: fadeInDown 1.5s;
     animation-iteration-count: 1;
 }
 
@@ -37,6 +37,22 @@
     0% {
         opacity: 0;
         transform: translate(0px, -100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
+.fadeInUp {
+    animation: fadeInUp 1.5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate(0px, 100px);
     }
     100% {
         opacity: 1;

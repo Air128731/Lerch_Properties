@@ -51,7 +51,7 @@ function ImageSlider() {
             <a className="prev" onClick={() => plusSlides(-1)}>❮</a>
             <a className="next" onClick={() => plusSlides(1)}>❯</a>
         </div>
-        <div className='fixed w-full bottom-3' style={{ textAlign: "center"}}>
+        <div className='absolute w-full bottom-7 fadeInUp' style={{ textAlign: "center"}}>
             <span className="dot" onClick={() => currentSlide(1)}></span> 
             <span className="dot" onClick={() => currentSlide(2)}></span> 
             <span className="dot" onClick={() => currentSlide(3)}></span> 
