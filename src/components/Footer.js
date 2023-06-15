@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
 import '../css/slide-show.css'
 import '../css/project-base.css';
-import { transform } from "typescript";
 
-function ImageSlider() {
+const Footer = () => {
   return (
     <>
         <div className="grid grid-cols-3">
@@ -15,4 +14,4 @@ function ImageSlider() {
   );
 }
 
-export default ImageSlider;
+export default Footer;
