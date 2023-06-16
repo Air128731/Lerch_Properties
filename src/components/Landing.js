@@ -2,6 +2,7 @@ import * as React from 'react'
 import '../css/project-base.css'
 import '../css/animations.css';
 import Navbar from './Navbar';
+import Footer from './Footer';
 import Slideshow from './Slideshow';
 import Aboutus from './Aboutus';
 
@@ -25,7 +26,7 @@ function Landing () {
           </div>
 
           {/* Aboutus section */}
-          <div className='flex justify-center py-20 fadeInLeft'>
+          <div className='relative flex justify-center py-20 bg-gray-200 fadeInLeft'>
             <div className='grid grid-cols-3 gap-10 Aboutus _lg:grid-cols-2'>
               <Aboutus flag="1" title="Search our Properties" content="Rentals are available in Edwardsville, Collinsville, Glen Carbon, & surrounding cities. We can help you find the perfect apartment, duplex, or townhouse. We manage over 1300 local properties."/>
               <Aboutus flag="2" title="Rental Application" content="Apply online to qualify for one of our rental properties by submitting our Apartment Rental Application. A copy of your ID, income documents and application fee is required in order for your application to be reviewed. Upon approval, a $200 hold deposit will be required to secure a unit."/>
@@ -34,6 +35,7 @@ function Landing () {
               <Aboutus flag="5" title="Maintenance Request" content="Fill out our form to submit a maintenance request by clicking on the maintenance request tab at the top of this page. We respond to all maintenance requests in a timely manner. If it’s an emergency, please call us at (618) 288-3108 and follow the prompts for emergency maintenance."/>
               <Aboutus flag="6" title="Pay Rent" content="We offer 2 different ways you can pay your rent. Set up ACH debit withdrawals from your checking or savings account. Stop by our rental office located in Maryville and place your payment in our drop box located to the left of our front office door. Payments can be placed in the drop box any time or day. Our office hours are Mon-Fri: 9AM-5PM."/>
             </div>
+            <img src="https://raydium.io/backgroundImages/home-bg-element-3.png" className='absolute top-0 w-full h-full' style={{top: "0%"}}></img>
           </div>
 
           {/* Business Hour section */}
@@ -75,7 +77,7 @@ function Landing () {
           </div>
 
           {/* Testimonial */}
-          <div className='flex flex-col py-10 bg-gray-50 fadeInLeft'>
+          <div className='flex flex-col py-10 bg-gray-200 fadeInLeft'>
             <div className='pb-10 text-4xl font-bold text-gray-700'>Testimonials</div>
             <div className='flex flex-row justify-center gap-60 _md:flex-col _md:gap-0'>
               <div className="card">
@@ -97,6 +99,7 @@ function Landing () {
             </div>
           </div>
 
+          <Footer />
           <div className='fixed top-0 w-full fadeInDown'>
             <Navbar />
           </div>          
