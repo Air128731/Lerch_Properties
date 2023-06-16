@@ -44,6 +44,15 @@ function Listings () {
                     </div>
                 </div>
             </div>
+            <div className='flex justify-center'>
+            <div className='flex flex-row justify-center gap-10 pb-10 _md:flex-col _md:w-1/4'>
+                <img src="https://lerchproperties.net/wp-content/uploads/2023/06/Lerch-Properties-35.webp"></img>
+                <img src="https://lerchproperties.net/wp-content/uploads/2023/06/Lerch-Properties-26.webp"></img>
+                <img src="https://lerchproperties.net/wp-content/uploads/2023/06/Lerch-Properties-36.webp"></img>
+                <img src="https://lerchproperties.net/wp-content/uploads/2023/06/Lerch-Properties-37.webp"></img>
+                <img src="https://lerchproperties.net/wp-content/uploads/2023/06/Lerch-Properties-38.webp"></img>
+            </div>
+            </div>
           <Footer />
           <div className='fixed top-0 w-full fadeInDown'>
             <Navbar />
