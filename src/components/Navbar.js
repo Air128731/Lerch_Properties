@@ -1,6 +1,7 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { useNavigate } from 'react-router-dom';
 
 const navigation = [
   { name: 'About us', href: '#', current: true },
@@ -15,6 +16,27 @@ function classNames(...classes) {
 }
 
 export default function Example() {
+  const navigate = useNavigate();
+
+  function gotoLanding(index){
+    if(index>=0 & index <= navigation.length) {
+      for (let i = 0; i < navigation.length; i++) {
+        if (i == index ) {
+          navigation[i].current = true;
+        }
+        else
+        {
+          navigation[i].current = false;
+        }
+     }
+    }
+
+    if(index == 0)
+      navigate('/', { replace: true });
+    else if(index == 1)
+      navigate('/listingproperty', { replace: true });
+  }
+  
   return (
     <Disclosure as="nav" className="bg-gray-800 bg-opacity-50">
       {({ open }) => (
@@ -47,10 +69,11 @@ export default function Example() {
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
-                    {navigation.map((item) => (
+                    {navigation.map((item, index) => (
                       <a
                         key={item.name}
                         href={item.href}
+                        onClick={() => gotoLanding(index)}
                         className={classNames(
                           item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                           'rounded-md px-3 py-2 text-sm font-medium'
