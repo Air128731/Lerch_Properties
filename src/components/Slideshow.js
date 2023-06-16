@@ -25,6 +25,19 @@ function ImageSlider() {
   useEffect(() => {
     const slides = document.getElementsByClassName("mySlides");
     const dots = document.getElementsByClassName("dot");
+
+    let intervalId = setInterval(() => {
+      setSlideIndex((prevIndex) =>
+        prevIndex === slides.length ? 1 : prevIndex + 1
+      );
+    }, 3000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
+  useEffect(() => {
+    const slides = document.getElementsByClassName("mySlides");
+    const dots = document.getElementsByClassName("dot");
     if (slideIndex > slides.length) {
       setSlideIndex(1);
     }    

@@ -7,10 +7,12 @@ import { PropaneOutlined } from "@mui/icons-material";
 const Property = (props) => {
   return (
     <>
-      <div class="relative container w-full">
-        <img src="https://www.lpc.com/wp-content/uploads/2018/02/attachment-510x382.jpg" alt="Avatar" class="image"></img>
-        <div class="overlay">
-          <div class="text-2xl absolute top-1/2 left-1/2 text-white font-bold" style={{transform: "translate(-50%, -50%)"}}>Hello World</div>
+      <div className="container w-full">
+        <div className="absolute text-2xl font-bold text-red-500 left-3 top-3">{props.price}</div>
+        <div className="absolute text-xl font-bold text-white right-3 top-3">{props.status}</div>
+        <img src={props.imageUrl} alt="Avatar" className="image"></img>
+        <div className="overlay">
+          <div className="absolute text-2xl font-bold text-white top-1/2 left-1/2" style={{transform: "translate(-50%, -50%)"}}>{props.title}</div>
         </div>
       </div>
     </>

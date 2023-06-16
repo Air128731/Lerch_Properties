@@ -14,8 +14,8 @@ function Listings () {
     return (
       <div className="App">
         <div className='relative w-full h-full body'>
-            <img src="https://www.lpc.com/wp-content/uploads/2018/04/rooftop_banner2.jpg" style={{width: "100%", height: "150px"}}></img>       
-            <div className='grid grid-cols-2 py-10 _md:grid-cols-1'>
+            <img src="https://www.lpc.com/wp-content/uploads/2018/04/rooftop_banner2.jpg" style={{width: "100%", height: "200px"}}></img>       
+            <div className='grid grid-cols-2 py-10 _md:grid-cols-1 fadeInDown'>
                 <div className='flex flex-col'>
                     <div className='text-2xl font-bold text-gray-700'>Contact Our Property Managers</div>
                     <div className='py-3 font-bold text-gray-500'>
@@ -44,7 +44,7 @@ function Listings () {
                     </div>
                 </div>
             </div>
-            <div className='flex justify-center'>
+            <div className='flex justify-center fadeInUp'>
             <div className='flex flex-row justify-center gap-10 pb-10 _md:flex-col _md:w-1/4'>
                 <img src="https://lerchproperties.net/wp-content/uploads/2023/06/Lerch-Properties-35.webp"></img>
                 <img src="https://lerchproperties.net/wp-content/uploads/2023/06/Lerch-Properties-26.webp"></img>
