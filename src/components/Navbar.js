@@ -61,13 +61,13 @@ export default function Example() {
               <div className="flex items-center justify-center flex-1 sm:items-stretch sm:justify-between">
                 <div className="flex items-center flex-shrink-0">
                   <img
-                    className="block w-auto h-8 lg:hidden"
-                    src="https://www.lpc.com/wp-content/uploads/2020/05/LPC-White-Logo-Bold.png"
+                    className="block w-24 h-12 lg:hidden"
+                    src="img/logo.png"
                     alt="Your Company"
                   />
                   <img
-                    className="hidden w-auto h-8 lg:block"
-                    src="https://www.lpc.com/wp-content/uploads/2020/05/LPC-White-Logo-Bold.png"
+                    className="hidden w-24 h-12 lg:block"
+                    src="img/logo.png"
                     alt="Your Company"
                   />
                 </div>
