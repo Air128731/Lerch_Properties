@@ -5,6 +5,7 @@ import Navbar from './Navbar';
 import Newsletter from './Newsletter';
 import Rental from './Application/Rental';
 import Accordions from './Application/Accordions';
+import Area from './Application/Area';
 
 function Listings () {
     return (
@@ -19,6 +20,11 @@ function Listings () {
             {/* Faq */}
             <div className='border border-gray-300 fadeInUp'>
               <Accordions />
+            </div>
+
+            {/* Area */}
+            <div className='border border-gray-300 fadeIn'>
+              <Area />
             </div>
 
           <Newsletter />
