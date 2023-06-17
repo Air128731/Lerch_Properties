@@ -49,7 +49,10 @@ function Landing () {
           {/* Testimonial */}
           <BlogSection />
 
+          {/* Footer */}
           <Newsletter />
+
+          {/* Navbar */}
           <div className='fixed top-0 w-full fadeInDown'>
             <Navbar />
           </div>          

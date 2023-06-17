@@ -1,8 +1,4 @@
-import { useState, useEffect } from "react";
-import '../css/project-base.css';
-import { transform } from "typescript";
-import { HomeIcon, UsersIcon, ShieldCheckIcon, PhoneIcon, WrenchScrewdriverIcon, ShoppingBagIcon } from "@heroicons/react/24/outline";
-import { PropaneOutlined } from "@mui/icons-material";
+import '../../css/project-base.css';
 
 const Property = (props) => {
   return (

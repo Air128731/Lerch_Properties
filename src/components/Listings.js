@@ -5,10 +5,7 @@ import Navbar from './Navbar';
 import Newsletter from './Newsletter';
 
 import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import Property from './Property';
-import { useTheme } from 'styled-components';
-import { listClasses } from '@mui/material';
+import Property from './PropertyItem/Property';
 const data = require('../data/data.json');
 
 function Listings () {

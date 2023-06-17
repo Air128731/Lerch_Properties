@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import '../../css/slide-show.css'
 import '../../css/project-base.css';
-import { transform } from "typescript";
 
 function ImageSlider() {
   const [slideIndex, setSlideIndex] = useState(1);
@@ -48,10 +47,10 @@ function ImageSlider() {
       slides[i].style.display = "none";  
     }
     for (let i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+      dots[i].className = dots[i].className.replace(" dotActive", "");
     }
     slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
+    dots[slideIndex-1].className += " dotActive";
   }, [slideIndex]);
 
   return (
