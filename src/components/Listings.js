@@ -2,7 +2,7 @@ import * as React from 'react'
 import '../css/project-base.css'
 import '../css/animations.css';
 import Navbar from './Navbar';
-import Footer from './Footer';
+import Newsletter from './Newsletter';
 
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -34,7 +34,7 @@ function Listings () {
             <div className='grid grid-cols-5 gap-2 p-10 duration-300 ease-in-out transitioin-all listingContent _md:grid-cols-3 fadeInLeft'>
               {listingContent}
             </div>
-          <Footer />
+          <Newsletter />
           <div className='fixed top-0 w-full fadeInDown'>
             <Navbar />
           </div>          

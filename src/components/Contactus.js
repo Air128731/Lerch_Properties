@@ -2,7 +2,7 @@ import * as React from 'react'
 import '../css/project-base.css'
 import '../css/animations.css';
 import Navbar from './Navbar';
-import Footer from './Footer';
+import Newsletter from './Newsletter';
 
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -53,7 +53,7 @@ function Listings () {
                 <img src="https://lerchproperties.net/wp-content/uploads/2023/06/Lerch-Properties-38.webp"></img>
             </div>
             </div>
-          <Footer />
+          <Newsletter />
           <div className='fixed top-0 w-full fadeInDown'>
             <Navbar />
           </div>          

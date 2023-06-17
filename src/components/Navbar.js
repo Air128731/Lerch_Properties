@@ -35,6 +35,8 @@ export default function Example() {
       navigate('/', { replace: true });
     else if(index == 1)
       navigate('/listingproperty', { replace: true });
+    else if(index == 3)
+      navigate('/faq', { replace: true });
     else if(index == 4)
       navigate('/contact', { replace: true });
   }
